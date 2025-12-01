@@ -165,72 +165,97 @@
         </div>
     </footer>
 
-    <script>
-        // Three.js terrain setup
-        const canvas = document.getElementById('terrain-canvas');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-        
-        function resizeRenderer() {
-            const header = canvas.parentElement;
-            renderer.setSize(header.offsetWidth, header.offsetHeight);
-            camera.aspect = header.offsetWidth / header.offsetHeight;
-            camera.updateProjectionMatrix();
-        }
-        resizeRenderer();
-        window.addEventListener('resize', resizeRenderer);
+<script>
+    // Three.js terrain setup
+    const canvas = document.getElementById('terrain-canvas');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / 400, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    
+    function resizeRenderer() {
+        const header = canvas.parentElement;
+        renderer.setSize(header.offsetWidth, header.offsetHeight);
+        camera.aspect = header.offsetWidth / header.offsetHeight;
+        camera.updateProjectionMatrix();
+    }
+    resizeRenderer();
+    window.addEventListener('resize', resizeRenderer);
 
-        // Create terrain geometry
-        const geometry = new THREE.PlaneGeometry(20, 20, 40, 40);
-        const vertices = geometry.attributes.position.array;
+    function loadHeightmapTerrain(imageUrl) {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
         
-        // Add height variation to create terrain
-        for (let i = 0; i < vertices.length; i += 3) {
-            const x = vertices[i];
-            const y = vertices[i + 1];
-            vertices[i + 2] = Math.sin(x * 0.5) * Math.cos(y * 0.5) * 2;
-        }
+        img.onload = function() {
+            const canvas2d = document.createElement('canvas');
+            const ctx = canvas2d.getContext('2d');
+            
+            const width = 128;
+            const height = 128;
+            canvas2d.width = width;
+            canvas2d.height = height;
+            ctx.drawImage(img, 0, 0, width, height);
+            
+            const imgData = ctx.getImageData(0, 0, width, height);
+            const pixels = imgData.data;
+            
+            // Create terrain geometry
+            const geometry = new THREE.PlaneGeometry(20, 20, width - 1, height - 1);
+            const vertices = geometry.attributes.position.array;
+            
+            // Apply height data from the heightmap with reduced height
+            for (let i = 0, j = 0; i < vertices.length; i += 3, j++) {
+                const pixelIndex = j * 4;
+                const heightValue = pixels[pixelIndex] / 255;
+                vertices[i + 2] = heightValue * 5 - 2.5; // Reduced height multiplier
+            }
+            
+            geometry.computeVertexNormals();
+            
+            const material = new THREE.MeshBasicMaterial({
+                color: 0x3b82f6,
+                wireframe: true,
+                transparent: true,
+                opacity: 0.15
+            });
+            
+            const terrain = new THREE.Mesh(geometry, material);
+            terrain.rotation.x = -Math.PI / 2.5;
+            scene.add(terrain);
+            
+            camera.position.set(0, 4, 12);
+            camera.lookAt(0, 0, 0);
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                terrain.rotation.z += 0.002;
+                renderer.render(scene, camera);
+            }
+            animate();
+        };
         
-        geometry.computeVertexNormals();
+        img.onerror = function() {
+            console.log('Could not load heightmap, using procedural terrain');
+            // createProceduralTerrain(); // Uncomment if you have this fallback function
+        };
         
-        // Create material with wireframe
-        const material = new THREE.MeshBasicMaterial({
-            color: 0x3b82f6,
-            wireframe: true,
-            transparent: true,
-            opacity: 0.15
-        });
-        
-        const terrain = new THREE.Mesh(geometry, material);
-        terrain.rotation.x = -Math.PI / 3;
-        scene.add(terrain);
-        
-        camera.position.z = 12;
-        camera.position.y = 5;
-        camera.lookAt(0, 0, 0);
-        
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            terrain.rotation.z += 0.002;
-            renderer.render(scene, camera);
-        }
-        animate();
+        img.src = imageUrl;
+    }
 
-        // Initialize the map
-        const map = L.map('map').setView([40.7128, -74.0060], 12);
+    loadHeightmapTerrain('static/terrain.png');
 
-        // Add tile layer with a clean, minimal style
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            maxZoom: 19
-        }).addTo(map);
+    // Initialize the map
+    const map = L.map('map').setView([40.7128, -74.0060], 12);
 
-        // Add a marker
-        const marker = L.marker([40.7128, -74.0060]).addTo(map);
-        marker.bindPopup('<b>New York City</b><br>Based here.').openPopup();
-    </script>
+    // Add tile layer with a clean, minimal style
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        maxZoom: 19
+    }).addTo(map);
+
+    // Add a marker
+    const marker = L.marker([40.7128, -74.0060]).addTo(map);
+    marker.bindPopup('<b>New York City</b><br>Based here.').openPopup();
+</script>
 
 </body>
 </html>
