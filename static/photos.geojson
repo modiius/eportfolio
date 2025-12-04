@@ -1,0 +1,3603 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7229277777778,
+          47.2279333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2675.jpeg",
+        "date": "2025:10:28 10:03:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0412166666667,
+          47.8057472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2419.jpeg",
+        "date": "2025:09:24 15:52:07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146722222222,
+          47.7535888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2659.jpeg",
+        "date": "2025:10:27 16:29:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6781,
+          47.1954
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2708.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0472583333333,
+          47.7987333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2435.jpeg",
+        "date": "2025:09:24 17:29:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147444444444,
+          47.7536166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2570.jpeg",
+        "date": "2025:10:12 10:50:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0398138888889,
+          47.7986111111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2618.jpeg",
+        "date": "2025:10:19 13:23:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0140083333333,
+          47.7383694444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2474.jpeg",
+        "date": "2025:09:28 15:06:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0418472222222,
+          47.8047166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2423.jpeg",
+        "date": "2025:09:24 15:54:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6896,
+          47.205
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2697.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0087027777778,
+          47.7224
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2511.jpeg",
+        "date": "2025:10:03 18:07:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0606638888889,
+          47.8153444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2454.jpeg",
+        "date": "2025:09:25 15:40:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0134111111111,
+          47.8215027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2638.jpeg",
+        "date": "2025:10:26 09:33:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6891333333333,
+          47.21265
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2792.jpeg",
+        "date": "2025:11:19 13:12:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9692388888889,
+          47.8436916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2546.jpeg",
+        "date": "2025:10:06 12:20:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0454,
+          47.7977
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2440.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2415.jpeg",
+        "date": "2025:09:24 14:07:59"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6901944444444,
+          47.2068444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2696.jpeg",
+        "date": "2025:10:28 14:47:05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6979444444444,
+          47.2182916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2679.jpeg",
+        "date": "2025:10:28 10:53:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.00815,
+          47.7217138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2507.jpeg",
+        "date": "2025:10:03 18:06:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408444444444,
+          47.8000611111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2442.jpeg",
+        "date": "2025:09:24 18:05:04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0353361111111,
+          47.6592361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2593.jpeg",
+        "date": "2025:10:15 08:56:53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0145222222222,
+          47.7517305555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2481.jpeg",
+        "date": "2025:09:29 18:47:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0389861111111,
+          47.8227916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2602.jpeg",
+        "date": "2025:10:16 14:10:43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1323527777778,
+          47.6474805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2747.jpeg",
+        "date": "2025:10:31 10:15:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.015125,
+          47.7540055555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2478.jpeg",
+        "date": "2025:09:28 17:25:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0066944444444,
+          47.7271583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2497.jpeg",
+        "date": "2025:10:03 17:34:03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408222222222,
+          47.8232722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2614.jpeg",
+        "date": "2025:10:19 09:15:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1654833333333,
+          47.6139138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2751.jpeg",
+        "date": "2025:10:31 11:15:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0820861111111,
+          47.7311583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2643.jpeg",
+        "date": "2025:10:26 15:33:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6979,
+          47.2182
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2680.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849083333333,
+          47.1892583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2706.jpeg",
+        "date": "2025:10:28 14:58:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0820861111111,
+          47.7311583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2642.jpeg",
+        "date": "2025:10:26 15:33:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849055555556,
+          47.1892694444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2707.jpeg",
+        "date": "2025:10:28 14:58:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408388888889,
+          47.8233
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2615.jpeg",
+        "date": "2025:10:19 09:18:40"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1776944444444,
+          47.61675
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2750.jpeg",
+        "date": "2025:10:31 10:53:11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0403,
+          47.7992
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2445.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0151111111111,
+          47.7539944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2479.jpeg",
+        "date": "2025:09:28 17:25:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0063944444444,
+          47.7284472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2496.jpeg",
+        "date": "2025:10:03 17:27:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0400916666667,
+          47.8217416666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2603.jpeg",
+        "date": "2025:10:16 17:21:47"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0151083333333,
+          47.7539888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2480.jpeg",
+        "date": "2025:09:28 17:25:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0354416666667,
+          47.66125
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2592.jpeg",
+        "date": "2025:10:15 08:53:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0081333333333,
+          47.7217138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2506.jpeg",
+        "date": "2025:10:03 18:06:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0450361111111,
+          47.7979888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2443.jpeg",
+        "date": "2025:09:24 18:21:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6981638888889,
+          47.2185472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2678.jpeg",
+        "date": "2025:10:28 10:53:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146388888889,
+          47.7537
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2551.jpeg",
+        "date": "2025:10:06 22:04:50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2414.jpeg",
+        "date": "2025:09:24 14:07:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6895305555556,
+          47.2089888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2681.jpeg",
+        "date": "2025:10:28 11:00:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0465,
+          47.8019
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2450.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9709805555556,
+          47.8425444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2547.jpeg",
+        "date": "2025:10:06 13:29:59"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5339833333333,
+          47.2400277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2814.jpeg",
+        "date": "2025:11:28 12:47:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0134416666667,
+          47.8214444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2639.jpeg",
+        "date": "2025:10:26 09:33:34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0081611111111,
+          47.7217472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2510.jpeg",
+        "date": "2025:10:03 18:06:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6831,
+          47.1901
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2691.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0607833333333,
+          47.8154305555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2455.jpeg",
+        "date": "2025:09:25 15:40:22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0418666666667,
+          47.8047027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2422.jpeg",
+        "date": "2025:09:24 15:54:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146722222222,
+          47.7535944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2588.jpeg",
+        "date": "2025:10:15 07:34:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0140027777778,
+          47.7383805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2475.jpeg",
+        "date": "2025:09:28 15:06:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0362888888889,
+          47.8017611111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2619.jpeg",
+        "date": "2025:10:19 13:48:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395,
+          47.7987
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2446.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146722222222,
+          47.7535694444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2463.jpeg",
+        "date": "2025:09:26 19:49:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0445611111111,
+          47.800175
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2434.jpeg",
+        "date": "2025:09:24 17:22:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.01465,
+          47.7535861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2571.jpeg",
+        "date": "2025:10:12 10:50:36"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6900111111111,
+          47.2133361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2789.jpeg",
+        "date": "2025:11:19 13:12:11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2418.jpeg",
+        "date": "2025:09:24 14:08:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.726175,
+          47.2288583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2674.jpeg",
+        "date": "2025:10:28 10:03:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395,
+          47.7987
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2447.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6831,
+          47.19
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2692.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0522972222222,
+          47.8014305555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2452.jpeg",
+        "date": "2025:09:25 13:29:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5340138888889,
+          47.2400333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2813.jpeg",
+        "date": "2025:11:28 12:47:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6807694444444,
+          47.2003472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2686.jpeg",
+        "date": "2025:10:28 12:40:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2202611111111,
+          47.3950388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2669.jpeg",
+        "date": "2025:10:28 08:00:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0434305555556,
+          47.8022777777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2805.jpeg",
+        "date": "2025:11:26 08:08:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2413.jpeg",
+        "date": "2025:09:24 14:07:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6830666666667,
+          47.1900888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2690.jpeg",
+        "date": "2025:10:28 13:25:21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070583333333,
+          47.7244833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2501.jpeg",
+        "date": "2025:10:03 17:48:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0403055555556,
+          47.7992027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2444.jpeg",
+        "date": "2025:09:24 18:33:45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147,
+          47.7536
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2756.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392944444444,
+          47.8233722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2782.jpeg",
+        "date": "2025:11:17 17:02:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0325083333333,
+          47.6482555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2595.jpeg",
+        "date": "2025:10:15 09:06:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0411,
+          47.8233
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2794.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0474611111111,
+          47.8018444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2468.jpeg",
+        "date": "2025:09:27 14:09:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0121805555556,
+          47.7452805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2487.jpeg",
+        "date": "2025:10:03 15:28:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0496222222222,
+          47.8043333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2604.jpeg",
+        "date": "2025:10:18 13:53:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392055555556,
+          47.8236916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2741.jpeg",
+        "date": "2025:10:30 11:32:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0061083333333,
+          47.7318083333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2491.jpeg",
+        "date": "2025:10:03 16:53:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0403888888889,
+          47.8232833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2612.jpeg",
+        "date": "2025:10:18 22:13:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0434166666667,
+          47.7879361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2583.jpeg",
+        "date": "2025:10:13 14:34:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0396083333333,
+          47.8053277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2429.jpeg",
+        "date": "2025:09:24 16:15:22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0698777777778,
+          47.7501972222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2645.jpeg",
+        "date": "2025:10:26 16:18:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849222222222,
+          47.1892361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2700.jpeg",
+        "date": "2025:10:28 14:55:50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5436,
+          47.2531
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2810.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0459111111111,
+          47.7988361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2798.jpeg",
+        "date": "2025:11:21 20:28:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.047,
+          47.7975
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2437.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0353,
+          47.6592
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2594.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7549166666667,
+          47.2692333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2673.jpeg",
+        "date": "2025:10:28 09:30:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147,
+          47.7535
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2543.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147,
+          47.7536
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2755.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147,
+          47.7536
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2754.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0449444444444,
+          47.8022722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2433.jpeg",
+        "date": "2025:09:24 17:04:45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147916666667,
+          47.7536083333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2576.jpeg",
+        "date": "2025:10:12 10:50:46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0397166666667,
+          47.8235444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2608.jpeg",
+        "date": "2025:10:18 18:00:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146722222222,
+          47.7535694444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2464.jpeg",
+        "date": "2025:09:26 20:26:10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.047,
+          47.7975
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2436.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0589972222222,
+          47.7779805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2649.jpeg",
+        "date": "2025:10:26 16:45:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0423166666667,
+          47.8042666666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2425.jpeg",
+        "date": "2025:09:24 15:55:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408555555556,
+          47.8232416666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2560.jpeg",
+        "date": "2025:10:08 13:36:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0422583333333,
+          47.8042861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2424.jpeg",
+        "date": "2025:09:24 15:55:53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0381,
+          47.762
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2817.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0589972222222,
+          47.7779777777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2648.jpeg",
+        "date": "2025:10:26 16:45:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.053275,
+          47.8044583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2465.jpeg",
+        "date": "2025:09:27 11:41:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0157833333333,
+          47.6396472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2598.jpeg",
+        "date": "2025:10:15 09:19:31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0448555555556,
+          47.8024888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2432.jpeg",
+        "date": "2025:09:24 17:04:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.829,
+          47.2847
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2787.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147944444444,
+          47.7536083333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2577.jpeg",
+        "date": "2025:10:12 10:50:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8328,
+          47.2845
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2786.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0672638888889,
+          47.8097611111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2808.jpeg",
+        "date": "2025:11:28 06:24:51"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7568333333333,
+          47.2702
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2672.jpeg",
+        "date": "2025:10:28 09:24:07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0354,
+          47.6613
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2590.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0148166666667,
+          47.7538944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2664.jpeg",
+        "date": "2025:10:28 05:55:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0381,
+          47.7619
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2816.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0401944444444,
+          47.8224833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2776.jpeg",
+        "date": "2025:11:14 09:09:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0820833333333,
+          47.7311555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2644.jpeg",
+        "date": "2025:10:26 15:33:53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0405222222222,
+          47.8051861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2428.jpeg",
+        "date": "2025:09:24 16:09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408222222222,
+          47.8232722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2613.jpeg",
+        "date": "2025:10:19 09:15:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0061027777778,
+          47.7318194444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2490.jpeg",
+        "date": "2025:10:03 16:53:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0501527777778,
+          47.8044888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2605.jpeg",
+        "date": "2025:10:18 14:43:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0421166666667,
+          47.804375
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2469.jpeg",
+        "date": "2025:09:27 15:46:22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0121833333333,
+          47.7452861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2486.jpeg",
+        "date": "2025:10:03 15:28:34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146,
+          47.7536
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2784.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1565,
+          47.611
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2746.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070638888889,
+          47.724475
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2500.jpeg",
+        "date": "2025:10:03 17:47:56"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.008725,
+          47.7223972222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2512.JPG",
+        "date": "2025:10:03 18:09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.04085,
+          47.8233555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2557.jpeg",
+        "date": "2025:10:08 13:36:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6808055555556,
+          47.2003861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2687.jpeg",
+        "date": "2025:10:28 12:40:31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2200444444444,
+          47.4179583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2668.jpeg",
+        "date": "2025:10:28 08:00:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5435,
+          47.2561416666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2812.jpeg",
+        "date": "2025:11:28 10:55:48"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0459138888889,
+          47.7987527777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2795.jpeg",
+        "date": "2025:11:21 20:27:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0266,
+          47.7866
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2632.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0523333333333,
+          47.80135
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2453.jpeg",
+        "date": "2025:09:25 13:29:56"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0710916666667,
+          47.7499722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2647.jpeg",
+        "date": "2025:10:26 16:18:45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0412777777778,
+          47.799075
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2581.jpeg",
+        "date": "2025:10:13 10:17:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0064,
+          47.7284388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2493.jpeg",
+        "date": "2025:10:03 17:27:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.049825,
+          47.8041277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2606.jpeg",
+        "date": "2025:10:18 14:56:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0121833333333,
+          47.7452861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2485.jpeg",
+        "date": "2025:10:03 15:28:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7966,
+          47.3005
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2788.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392944444444,
+          47.8233722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2780.jpeg",
+        "date": "2025:11:17 17:01:47"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070333333333,
+          47.7245305555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2503.jpeg",
+        "date": "2025:10:03 17:50:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0087166666667,
+          47.7223944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2522.JPG",
+        "date": "2025:10:03 18:11:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0422638888889,
+          47.8104944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2411.jpeg",
+        "date": "2025:09:24 12:45:45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0664305555556,
+          47.8113833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2807.jpeg",
+        "date": "2025:11:28 06:24:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6885083333333,
+          47.2085888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2684.jpeg",
+        "date": "2025:10:28 11:53:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5436055555556,
+          47.2535472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2811.jpeg",
+        "date": "2025:11:28 10:54:32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0459166666667,
+          47.798775
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2796.jpeg",
+        "date": "2025:11:21 20:27:47"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146805555556,
+          47.7535888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2779.jpeg",
+        "date": "2025:11:17 08:31:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0405694444444,
+          47.80535
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2427.jpeg",
+        "date": "2025:09:24 16:08:11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0073611111111,
+          47.7332472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2535.jpeg",
+        "date": "2025:10:03 19:26:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0420361111111,
+          47.8045583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2470.jpeg",
+        "date": "2025:09:27 15:46:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0354,
+          47.6613
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2589.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0064861111111,
+          47.7384611111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2489.jpeg",
+        "date": "2025:10:03 16:22:45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0474861111111,
+          47.8018388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2466.jpeg",
+        "date": "2025:09:27 14:07:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147861111111,
+          47.7536166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2574.jpeg",
+        "date": "2025:10:12 10:50:42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0433166666667,
+          47.8059777777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2431.jpeg",
+        "date": "2025:09:24 16:44:04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.04085,
+          47.8233555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2558.jpeg",
+        "date": "2025:10:08 13:36:41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.758925,
+          47.2942166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2671.jpeg",
+        "date": "2025:10:28 09:05:43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0140555555556,
+          47.7535972222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2775.jpeg",
+        "date": "2025:11:13 07:12:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0269833333333,
+          47.7875277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2631.jpeg",
+        "date": "2025:10:24 15:55:11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.549,
+          47.2554
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2822.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0344333333333,
+          47.8213916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2774.jpeg",
+        "date": "2025:11:12 13:29:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0505055555556,
+          47.8215138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2666.jpeg",
+        "date": "2025:10:28 07:10:56"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6831083333333,
+          47.190125
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2689.jpeg",
+        "date": "2025:10:28 13:25:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2197722222222,
+          47.3949444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2670.jpeg",
+        "date": "2025:10:28 08:00:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.04085,
+          47.8233555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2559.jpeg",
+        "date": "2025:10:08 13:36:43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147888888889,
+          47.7536138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2575.jpeg",
+        "date": "2025:10:12 10:50:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0427416666667,
+          47.8056972222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2430.jpeg",
+        "date": "2025:09:24 16:36:03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0064972222222,
+          47.7384444444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2488.jpeg",
+        "date": "2025:10:03 16:22:37"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0474916666667,
+          47.8018138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2467.jpeg",
+        "date": "2025:09:27 14:09:04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392277777778,
+          47.8237027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2758.jpeg",
+        "date": "2025:11:06 11:30:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0073472222222,
+          47.7332333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2534.jpeg",
+        "date": "2025:10:03 19:26:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392083333333,
+          47.8237277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2563.jpeg",
+        "date": "2025:10:09 12:58:31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0423388888889,
+          47.8042555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2426.jpeg",
+        "date": "2025:09:24 15:56:03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0576388888889,
+          47.8007861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2451.jpeg",
+        "date": "2025:09:25 13:09:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0381,
+          47.7619
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2821.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0459277777778,
+          47.7988138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2797.jpeg",
+        "date": "2025:11:21 20:27:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0355,
+          47.8095
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2410.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.047,
+          47.7975
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2438.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6885055555556,
+          47.208575
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2685.jpeg",
+        "date": "2025:10:28 11:54:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0436916666667,
+          47.8023527777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2806.jpeg",
+        "date": "2025:11:26 08:09:03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395027777778,
+          47.8234027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2555.jpeg",
+        "date": "2025:10:08 10:32:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6830861111111,
+          47.1900638888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2693.jpeg",
+        "date": "2025:10:28 13:26:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070666666667,
+          47.7244527777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2502.jpeg",
+        "date": "2025:10:03 17:49:42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0392944444444,
+          47.8233722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2781.jpeg",
+        "date": "2025:11:17 17:01:54"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0325027777778,
+          47.6482611111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2596.jpeg",
+        "date": "2025:10:15 09:07:05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0507611111111,
+          47.7729805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2650.jpeg",
+        "date": "2025:10:26 16:52:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0548416666667,
+          47.8216861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2484.jpeg",
+        "date": "2025:10:01 17:46:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.049925,
+          47.8041111111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2607.jpeg",
+        "date": "2025:10:18 14:57:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0471,
+          47.7974
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2439.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0068611111111,
+          47.7287111111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2492.jpeg",
+        "date": "2025:10:03 17:24:05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6848833333333,
+          47.1891777777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2703.jpeg",
+        "date": "2025:10:28 14:56:34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0381,
+          47.762
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2820.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0710944444444,
+          47.7499722222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2646.jpeg",
+        "date": "2025:10:26 16:18:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0412277777778,
+          47.8057555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2421.jpeg",
+        "date": "2025:09:24 15:52:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0071888888889,
+          47.7245666666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2499.jpeg",
+        "date": "2025:10:03 17:47:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0058888888889,
+          47.7317583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2533.jpeg",
+        "date": "2025:10:03 19:15:51"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0167305555556,
+          47.7356027777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2476.jpeg",
+        "date": "2025:09:28 15:14:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1776861111111,
+          47.61675
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2749.jpeg",
+        "date": "2025:10:31 10:53:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147805555556,
+          47.7536166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2572.jpeg",
+        "date": "2025:10:12 10:50:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849,
+          47.1892
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2701.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0081611111111,
+          47.7217472222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2509.jpeg",
+        "date": "2025:10:03 18:06:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0431055555556,
+          47.8000944444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2620.jpeg",
+        "date": "2025:10:19 14:22:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6876583333333,
+          47.1978333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2698.jpeg",
+        "date": "2025:10:28 14:49:36"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.979225,
+          47.8419638888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2548.jpeg",
+        "date": "2025:10:06 14:39:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0134638888889,
+          47.8214916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2636.jpeg",
+        "date": "2025:10:26 09:32:34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0344,
+          47.8213527777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2773.jpeg",
+        "date": "2025:11:12 13:29:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6848833333333,
+          47.1891777777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2704.jpeg",
+        "date": "2025:10:28 14:56:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6808,
+          47.2004
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2688.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0821305555556,
+          47.7311277777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2641.jpeg",
+        "date": "2025:10:26 15:33:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7052,
+          47.2219
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2677.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.040075,
+          47.793625
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2616.jpeg",
+        "date": "2025:10:19 12:03:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0064027777778,
+          47.7284388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2495.jpeg",
+        "date": "2025:10:03 17:27:31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0391527777778,
+          47.8225833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2745.jpeg",
+        "date": "2025:10:31 07:59:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0403972222222,
+          47.8219416666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2600.jpeg",
+        "date": "2025:10:15 18:21:21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0354444444444,
+          47.66125
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2591.jpeg",
+        "date": "2025:10:15 08:53:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849,
+          47.1892
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2702.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070305555556,
+          47.7245222222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2505.jpeg",
+        "date": "2025:10:03 17:50:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6892333333333,
+          47.2085333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2694.jpeg",
+        "date": "2025:10:28 14:08:43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2417.jpeg",
+        "date": "2025:09:24 14:08:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6895444444444,
+          47.2090222222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2682.jpeg",
+        "date": "2025:10:28 11:00:31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7124,
+          47.2244
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2676.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.69005,
+          47.2133361111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2790.jpeg",
+        "date": "2025:11:19 13:12:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0606,
+          47.8152888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2456.jpeg",
+        "date": "2025:09:25 15:40:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0606166666667,
+          47.8153194444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2457.jpeg",
+        "date": "2025:09:25 15:40:41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6899027777778,
+          47.2132222222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2791.jpeg",
+        "date": "2025:11:19 13:12:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0146777777778,
+          47.7535888888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2545.jpeg",
+        "date": "2025:10:06 11:10:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6884972222222,
+          47.2085694444444
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2683.jpeg",
+        "date": "2025:10:28 11:53:48"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395055555556,
+          47.8231861111111
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2416.jpeg",
+        "date": "2025:09:24 14:08:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0605388888889,
+          47.815375
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2553.jpeg",
+        "date": "2025:10:07 17:04:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6892333333333,
+          47.2085333333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2695.jpeg",
+        "date": "2025:10:28 14:08:44"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0408,
+          47.8002388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2441.jpeg",
+        "date": "2025:09:24 18:04:46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0070361111111,
+          47.7245222222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2504.jpeg",
+        "date": "2025:10:03 17:50:50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147416666667,
+          47.7538555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2482.jpeg",
+        "date": "2025:09:30 21:30:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0064027777778,
+          47.7284388888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2494.jpeg",
+        "date": "2025:10:03 17:27:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0400694444444,
+          47.7936527777778
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2617.jpeg",
+        "date": "2025:10:19 12:03:10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.014675,
+          47.7535833333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2586.jpeg",
+        "date": "2025:10:14 08:02:40"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1711,
+          47.543
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2667.MOV",
+        "date": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6849138888889,
+          47.1892138888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2705.jpeg",
+        "date": "2025:10:28 14:56:53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.013425,
+          47.8214222222222
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2640.jpeg",
+        "date": "2025:10:26 09:33:36"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0134638888889,
+          47.8214916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2637.jpeg",
+        "date": "2025:10:26 09:32:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6875916666667,
+          47.1976055555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2699.jpeg",
+        "date": "2025:10:28 14:49:39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0430805555556,
+          47.8000916666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2621.jpeg",
+        "date": "2025:10:19 14:22:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0081638888889,
+          47.721725
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2508.jpeg",
+        "date": "2025:10:03 18:06:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0147861111111,
+          47.7536166666667
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2573.jpeg",
+        "date": "2025:10:12 10:50:42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1323416666667,
+          47.6474805555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2748.jpeg",
+        "date": "2025:10:31 10:15:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0072027777778,
+          47.7245638888889
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2498.jpeg",
+        "date": "2025:10:03 17:47:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0058888888889,
+          47.7317583333333
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2532.jpeg",
+        "date": "2025:10:03 19:15:37"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0175222222222,
+          47.732375
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2477.jpeg",
+        "date": "2025:09:28 15:41:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0412277777778,
+          47.8057555555556
+        ]
+      },
+      "properties": {
+        "file": "/Users/timothysimons/Study/scrape-photos/photosexport/IMG_2420.jpeg",
+        "date": "2025:09:24 15:52:21"
+      }
+    }
+  ]
+}

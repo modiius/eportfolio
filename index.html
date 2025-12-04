@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         body {
@@ -44,13 +45,13 @@
                 <span class="text-gray-600 text-sm font-medium">?</span>
             </button>
             <div
-                class="hidden group-hover:block absolute right-0 mt-2 w-64 p-3
+                class="hidden group-hover:block absolute right-0 bottom-full mb-2 w-64 p-3
                     bg-white border border-gray-300 rounded-lg shadow-lg
                     text-sm text-gray-700 leading-relaxed">
             <p>
                 <strong class="text-gray-900">3D Untersberg Visualisation</strong><br>
                 The Untersberg <a href="https://en.wikipedia.org/wiki/Massif" target="_blank">massif</a> has been a prominent part of my time in Salzburg, Austria.  
-                Shown here is a 3D heightmap of the nearest peak, visualised with <a href="https://threejs.org/" target="_blank">three.js</a>
+                Shown here is a 3D heightmap of the nearest peak (visualised with <a href="https://threejs.org/" target="_blank">three.js</a>)
             </p>
             </div>
         </div>
@@ -64,9 +65,22 @@
         </div>
     </header>
 
+    <!-- About Me Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16 border-b border-gray-200">
+        <h2 class="text-2xl font-light mb-6 text-gray-900">About Me</h2>
+        <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 leading-relaxed mb-4">
+                I'm a software engineer and geoinformatics student based in Salzburg, Austria, with a passion for combining technology and spatial data to solve real-world problems. My work focuses on creating interactive visualizations and tools that make complex geographic information accessible and actionable.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                When I'm not coding, you'll find me exploring the Austrian Alps, particularly the Untersberg massif, which has become a significant part of my experience here. I'm fascinated by the intersection of technology, geography, and environmental science, and I'm always looking for new ways to leverage data to understand our world better.
+            </p>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="max-w-5xl mx-auto px-6 py-16">
-        <h2 class="text-2xl font-light mb-10 text-gray-900">Selected Work</h2>
+        <h2 class="text-2xl font-light mb-10 text-gray-900">Selected Coursework</h2>
         
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Project 1 -->
@@ -436,69 +450,154 @@
     }
 
     loadHeightmapTerrain('static/terrain.png');
-
-    // Initialize the map
-    const map = L.map('map').setView([40.7128, -74.0060], 12);
-
+    
+    // Initialize the map with default view
+    const map = L.map('map').setView([47.5, 13], 8);
+    
     // Add tile layer with a clean, minimal style
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         maxZoom: 19
     }).addTo(map);
 
-    // Add a marker
-    const marker = L.marker([40.7128, -74.0060]).addTo(map);
-    marker.bindPopup('<b>New York City</b><br>Based here.').openPopup();
-    
-    // Create heatmap data (sample points around NYC)
-    const heatmapData = [
-        // Manhattan cluster
-        [40.7589, -73.9851, 0.9], // Times Square area
-        [40.7614, -73.9776, 0.8],
-        [40.7580, -73.9855, 0.85],
-        [40.7489, -73.9680, 0.7], // Grand Central area
-        [40.7505, -73.9934, 0.75],
-        
-        // Brooklyn cluster
-        [40.6782, -73.9442, 0.6], // Brooklyn
-        [40.6795, -73.9495, 0.65],
-        [40.6851, -73.9383, 0.55],
-        
-        // Queens cluster
-        [40.7282, -73.7949, 0.5], // Queens
-        [40.7389, -73.8804, 0.45],
-        
-        // Financial District
-        [40.7074, -74.0113, 0.8],
-        [40.7089, -74.0090, 0.75],
-        
-        // Upper Manhattan
-        [40.7829, -73.9654, 0.6],
-        [40.7889, -73.9761, 0.55]
-    ];
-    
-    // Function to get color based on intensity
-    function getHeatColor(intensity) {
-        if (intensity > 0.8) return '#e74c3c';      // Red
-        if (intensity > 0.6) return '#e67e22';      // Orange
-        if (intensity > 0.4) return '#f39c12';      // Yellow-orange
-        if (intensity > 0.2) return '#f1c40f';      // Yellow
-        return '#3498db';                            // Blue
-    }
-    
-    // Add circles for heatmap visualization
-    heatmapData.forEach(point => {
-        const [lat, lng, intensity] = point;
-        
-        L.circle([lat, lng], {
-            color: getHeatColor(intensity),
-            fillColor: getHeatColor(intensity),
-            fillOpacity: 0.4,
-            opacity: 0.6,
-            radius: intensity * 500,
-            weight: 2
-        }).addTo(map).bindPopup(`Intensity: ${(intensity * 100).toFixed(0)}%`);
+    // Custom marker icon (camera icon style)
+    const photoIcon = L.divIcon({
+        className: 'photo-marker',
+        html: '<div style="background: #e74c3c; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
     });
+
+    let heatLayer, markersLayer;
+    let currentGeoJSONData;
+
+    // Function to load and display GeoJSON data
+    function loadGeoJSON(geojsonData) {
+        currentGeoJSONData = geojsonData;
+
+        // Find the most recent photo date
+        let latestDate = null;
+        let photoCount = geojsonData.features.length;
+        
+        geojsonData.features.forEach(feature => {
+            if (feature.properties.date) {
+                // Handle different date formats
+                let dateStr = feature.properties.date;
+                // Remove any timezone info and clean up
+                dateStr = dateStr.split('+')[0].split('Z')[0].trim();
+                // Replace colons with dashes in date part only (YYYY:MM:DD to YYYY-MM-DD)
+                dateStr = dateStr.replace(/^(\d{4}):(\d{2}):(\d{2})/, '$1-$2-$3');
+                
+                const date = new Date(dateStr);
+                if (!isNaN(date.getTime()) && (!latestDate || date > latestDate)) {
+                    latestDate = date;
+                }
+            }
+        });
+
+        // Format the date nicely
+        const formattedLatestDate = latestDate && !isNaN(latestDate.getTime())
+            ? latestDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+            : 'Unknown';
+
+        // Add custom control to show photo count and latest date
+        const info = L.control({ position: 'topright' });
+        info.onAdd = function() {
+            const div = L.DomUtil.create('div', 'map-info-control');
+            div.innerHTML = `
+                <strong>📸 ${photoCount} photos from my reel</strong>
+                <br>
+                <small>Last Updated: ${formattedLatestDate}</small>
+            `;
+            return div;
+        };
+        info.addTo(map);
+
+        // Prepare heatmap data: [lat, lng, intensity]
+        const heatData = geojsonData.features.map(feature => [
+            feature.geometry.coordinates[1], // lat
+            feature.geometry.coordinates[0], // lng
+            1 // intensity
+        ]);
+
+        // Create heatmap layer
+        heatLayer = L.heatLayer(heatData, {
+            radius: 25,
+            blur: 15,
+            maxZoom: 13,
+            max: 1.0,
+            gradient: {
+                0.0: '#3388ff',
+                0.3: '#44bb44', 
+                0.5: '#ffff00',
+                0.7: '#ff8800',
+                1.0: '#ff0000'
+            }
+        }).addTo(map);
+
+        // Create markers layer (initially hidden)
+        markersLayer = L.layerGroup();
+        L.geoJSON(geojsonData, {
+            pointToLayer: function(feature, latlng) {
+                return L.marker(latlng, { icon: photoIcon });
+            },
+            onEachFeature: function(feature, layer) {
+                const props = feature.properties;
+                const fileName = props.file ? props.file.split('/').pop() : 'Unknown';
+                const formattedDate = props.date ? props.date.replace(/:/g, '-').substring(0, 10) : 'No date';
+                layer.bindPopup(`
+                    <div style="min-width: 150px;">
+                        <strong>📷 ${formattedDate}</strong><br>
+                    </div>
+                `);
+            }
+        }).addTo(markersLayer);
+
+        // Switch between heatmap and markers based on zoom level
+        function updateVisualization() {
+            const zoom = map.getZoom();
+            if (zoom > 13) {
+                if (!map.hasLayer(markersLayer)) {
+                    map.removeLayer(heatLayer);
+                    map.addLayer(markersLayer);
+                }
+            } else {
+                if (!map.hasLayer(heatLayer)) {
+                    map.removeLayer(markersLayer);
+                    map.addLayer(heatLayer);
+                }
+            }
+        }
+
+        map.on('zoomend', updateVisualization);
+        updateVisualization();
+
+        // Fit map bounds to show all markers
+        const bounds = L.latLngBounds(
+            geojsonData.features.map(f => [f.geometry.coordinates[1], f.geometry.coordinates[0]])
+        );
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
+
+    // Try to fetch the GeoJSON file from static folder
+    fetch('static/photos.geojson')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('GeoJSON file not found');
+            }
+            return response.json();
+        })
+        .then(geojsonData => {
+            loadGeoJSON(geojsonData);
+        })
+        .catch(error => {
+            console.error('Error loading GeoJSON:', error);
+            // Add a message on the map
+            L.popup()
+                .setLatLng([47.5, 13])
+                .setContent('<b>Could not load photos.geojson</b><br>Make sure the file is in the static/ directory.')
+                .openOn(map);
+        });
 </script>
 
 </body>
