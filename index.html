@@ -70,15 +70,18 @@
         <h2 class="text-2xl font-light mb-6 text-gray-900">About Me</h2>
         <div class="prose prose-lg max-w-none">
             <p class="text-gray-700 leading-relaxed mb-4">
-                I'm a software engineer and geoinformatics student based in Salzburg, Austria, with a passion for combining technology and spatial data to solve real-world problems. My work focuses on creating interactive visualizations and tools that make complex geographic information accessible and actionable.
+                I am a software engineer and geoinformatics student with a strong background in computer vision and software infrastructure.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                My focus lies at the intersection of these fields, combining computer vision with Geographic Information Systems (GIS) to build software that helps interpret and understand spatial data in new and meaningful ways.
             </p>
             <p class="text-gray-700 leading-relaxed">
-                When I'm not coding, you'll find me exploring the Austrian Alps, particularly the Untersberg massif, which has become a significant part of my experience here. I'm fascinated by the intersection of technology, geography, and environmental science, and I'm always looking for new ways to leverage data to understand our world better.
+                As a student at PLUS, I live on the outskirts of Salzburg near the Untersberg massif. Sure, my commute can feel long at times, but I’m lucky enough to have countless hiking trails just steps from my door.
+                The rotating visualisation above is a part of the Untersberg that I wake up to each morning. 
             </p>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section class="max-w-5xl mx-auto px-6 py-16">
         <h2 class="text-2xl font-light mb-10 text-gray-900">Selected Coursework</h2>
         
@@ -86,16 +89,20 @@
             <!-- Project 1 -->
             <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
                 <div class="aspect-video bg-gray-200">
-                    <img src="https://via.placeholder.com/600x400/4A90E2/FFFFFF?text=Urban+Mapping" alt="Urban Mapping Project" class="w-full h-full object-cover">
+                    <img src="" alt="IN PROGRESS" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-medium mb-2 text-gray-900">Google Earth Engine</h3>
+                    <h3 class="text-xl font-medium mb-1 text-gray-900">Longwall Mining Subsidence Analysis</h3>
+                    <p class="text-sm text-gray-500 mb-4">Advanced Remote Sensing</p>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        The Hunga Tonga submarine volcano erupted in January 15, 2022. This created a caldera, which caused much of the volcano's visible landmass to dissapear
-                        below the ocean surface.
+                        SNAP is used to perform InSAR on a Longwall mining site near Sydney, Australia, to measure ground subsidence. </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        This subsidence occurs because the mined-out tunnels are purposely allowed to collapse, causing the ground surface to move downward.
                     </p>
-                    <!-- <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a> -->
-                    <a href="https://code.earthengine.google.com/d3908bcbab4f68ccac7da6f2c42efd73?hideCode=true" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        The project aims to accurately quantify this displacement to monitor the mining operation's impact.
+                    </p>
+                    <a href="wip.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
                 </div>
             </div>
 
@@ -108,9 +115,10 @@
                     </video>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-medium mb-2 text-gray-900">Google Earth Engine</h3>
+                    <h3 class="text-xl font-medium mb-1 text-gray-900">Hunga Tonga Volcanic Eruption</h3>
+                    <p class="text-sm text-gray-500 mb-4">Big Earth Data</p>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        The Hunga Tonga submarine volcano erupted in January 15, 2022. This created a caldera, which caused much of the volcano's visible landmass to dissapear
+                        The Hunga Tonga submarine volcano erupted in January 15, 2022. This created a caldera, which caused much of the volcano's visible landmass to disappear
                         below the ocean surface.
                     </p>
                     <p class="text-gray-600 mb-4 leading-relaxed">
@@ -129,26 +137,32 @@
                     </video>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-medium mb-2 text-gray-900">Spatial Simulation</h3>
+                    <h3 class="text-xl font-medium mb-1 text-gray-900">Sheep Herding Simulation</h3>
+                    <p class="text-sm text-gray-500 mb-4">Spatial Simulation</p>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        Shepherd dogs herding sheep through a gate into a different pasture.
-                        This project explores how complex animal behaviour can be encoded by a simple set of rules.
+                        Shepherd dogs herding sheep through a gate into a different pasture. The simulation was written in the GAMA programming langauge.
                         </p>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                        The simulation was written in the GAMA programming langauge.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
+                        Visualised above is an analysis of real-world flocking footage. Flock behavior can be quantified using metrics such as the convex hull area, which captures the spatial distribution of the group.</p>
+                    <a href="wip.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
                 </div>
             </div>
 
             <!-- Project 4 -->
             <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
-                <div class="aspect-video bg-gray-200">
-                    <img src="https://via.placeholder.com/600x400/FF6B6B/FFFFFF?text=Portfolio+Generator" alt="Portfolio Generator" class="w-full h-full object-cover">
+                <div class="aspect-video bg-gray-200 overflow-hidden">
+                    <video class="w-full h-full object-cover" style="transform: scale(1.2);" autoplay loop muted playsinline>
+                        <source src="static/poster.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-medium mb-2 text-gray-900">Portfolio Generator</h3>
-                    <p class="text-gray-600 mb-4 leading-relaxed">Open-source tool that helps designers quickly create responsive portfolio websites with customizable templates.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
+                    <h3 class="text-xl font-medium mb-1 text-gray-900">Interactive Flocking Dynamics</h3>
+                    <p class="text-sm text-gray-500 mb-4">Spatial Thinking</p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">This interactive web poster explores emergent behavior in sheep flocking dynamics through real-time simulation.</p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Building upon concepts from spatial simulation coursework, it demonstrates how complex collective patterns arise from simple rules, such as separation, alignment, and cohesion.</p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Viewers can interact directly with the flock and adjust parameters to observe how individual behaviours can affect coordinated group movement.</p>
+                    <a href="simulation.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">View Project →</a>
                 </div>
             </div>
         </div>
@@ -252,9 +266,9 @@
             <div>
                 <h3 class="text-lg font-medium text-gray-900 mb-4">Technical Expertise</h3>
                 <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">GIS</span>
                     <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">Computer Vision</span>
                     <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">Machine Learning</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">GIS</span>
                     <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">Cloud Computing</span>
                     <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">Virtualisation</span>
                     <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded-full border border-blue-200">System Architecture</span>
@@ -266,9 +280,12 @@
             <div>
                 <h3 class="text-lg font-medium text-gray-900 mb-4">Technologies & Tools</h3>
                 <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">QGIS</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">Snap</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">eCognition</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">ArcGIS</span>
                     <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">PyTorch</span>
                     <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">OpenCV</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">QGIS</span>
                     <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">FFmpeg</span>
                     <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">Docker</span>
                     <span class="px-3 py-1 bg-green-50 text-green-700 text-sm rounded-full border border-green-200">Linux</span>
@@ -336,7 +353,7 @@
 
             <!-- Footer text -->
             <p class="text-gray-600 text-sm text-center">
-                © 2024 Alex Morgan. All rights reserved.
+                © 2025 Timothy Simons. All rights reserved.
             </p>
         </div>
     </footer>
