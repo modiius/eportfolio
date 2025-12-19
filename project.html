@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Timothy Simons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: fixed;
+        }
+        #viewer {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        .error-message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer">
+        <div class="error-message">
+            <div>
+                <p>Loading PDF...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('project') || 'ridgecrest';
+        const projects = {
+            'ridgecrest': 'static/ridgecrest_project.pdf',
+            'volcano': 'static/volcano_project.pdf',
+            'simulation': 'static/simulation_project.pdf',
+            'flocking': 'static/flocking_project.pdf'
+        };
+        const pdfPath = projects[projectId] || projects['ridgecrest'];
+        const viewer = document.getElementById('viewer');
+        fetch(pdfPath)
+            .then(response => {
+                if (response.ok) {
+                    viewer.innerHTML = `<iframe src="${pdfPath}"></iframe>`;
+                } else {
+                    throw new Error('PDF not found');
+                }
+            })
+            .catch(error => {
+                viewer.innerHTML = '<div class="error-message"><div><p>PDF not found</p><small>Place your PDF in the static/ directory</small></div></div>';
+            });
+    </script>
+</body>
+</html>
