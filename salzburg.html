@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salzburg Photo Journey - Poster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .poster-container {
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        #map {
+            flex: 1;
+            border: none;
+        }
+        .map-info-control {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .legend-control {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .legend-control .legend-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .legend-gradient {
+            height: 20px;
+            background: linear-gradient(to right, #c7d2fe, #3b82f6, #10b981, #fbbf24, #f97316, #ef4444);
+            border-radius: 4px;
+            margin: 8px 0;
+        }
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+        }
+        .poster-header {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 30px 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .poster-footer {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 24px 60px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster-container">
+        <!-- Header -->
+        <div class="poster-header">
+            <h1 class="text-4xl font-light text-gray-900 text-center mb-2">My Photo Journey Through Salzburg</h1>
+            <p class="text-xl text-gray-600 text-center">Exploring the landscapes and places that shape my time in Austria</p>
+        </div>
+
+        <!-- Map -->
+        <div id="map"></div>
+
+        <!-- Footer -->
+        <div class="poster-footer">
+            <div class="flex justify-center items-center gap-12 mb-4 flex-wrap">
+                <img src="static/cofunded.png" alt="Cofunded Logo" class="h-12 object-contain">
+                <img src="static/corpernicus.png" alt="Copernicus Logo" class="h-12 object-contain">
+                <img src="static/plus.png" alt="Plus Logo" class="h-12 object-contain">
+                <img src="static/ubs.png" alt="UBS Logo" class="h-12 object-contain">
+            </div>
+            <p class="text-gray-600 text-base text-center">
+                © 2026 Timothy Simons • Copernicus Master in Digital Earth
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize the map with Salzburg focus
+        const map = L.map('map', {
+            zoomControl: true,
+            attributionControl: true
+        }).setView([47.8095, 13.0550], 10);
+        
+        // Add base tile layer (without labels)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            maxZoom: 19,
+            zIndex: 1
+        }).addTo(map);
+
+        // Will add labels layer after heatmap (see below)
+
+        // Custom marker icon
+        const photoIcon = L.divIcon({
+            className: 'photo-marker',
+            html: '<div style="background: #3b82f6; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.4);"></div>',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+        });
+
+        // Load and display Salzburg district boundary
+        fetch('static/salzburg.geojson')
+            .then(response => response.json())
+            .then(salzburgData => {
+                L.geoJSON(salzburgData, {
+                    style: {
+                        color: '#fbbf24',
+                        weight: 3,
+                        opacity: 0.9,
+                        fillColor: '#fbbf24',
+                        fillOpacity: 0.05,
+                    }
+                }).addTo(map).bindPopup('<strong>Salzburg District</strong>');
+            })
+            .catch(error => {
+                console.error('Error loading Salzburg boundary:', error);
+            });
+
+        let heatLayer, markersLayer;
+
+        // Function to load and display GeoJSON data
+        function loadGeoJSON(geojsonData) {
+            // Find the most recent photo date
+            let latestDate = null;
+            let photoCount = geojsonData.features.length;
+            
+            geojsonData.features.forEach(feature => {
+                if (feature.properties.date) {
+                    let dateStr = feature.properties.date;
+                    dateStr = dateStr.split('+')[0].split('Z')[0].trim();
+                    dateStr = dateStr.replace(/^(\d{4}):(\d{2}):(\d{2})/, '$1-$2-$3');
+                    
+                    const date = new Date(dateStr);
+                    if (!isNaN(date.getTime()) && (!latestDate || date > latestDate)) {
+                        latestDate = date;
+                    }
+                }
+            });
+
+            const formattedLatestDate = latestDate && !isNaN(latestDate.getTime())
+                ? latestDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+                : 'Unknown';
+
+            // Add custom control
+            const info = L.control({ position: 'topright' });
+            info.onAdd = function() {
+                const div = L.DomUtil.create('div', 'map-info-control');
+                div.innerHTML = `
+                    <strong style="font-size: 18px;">📸 ${photoCount} photos from my journey</strong>
+                    <br>
+                    <small style="color: #666;">Last Updated: ${formattedLatestDate}</small>
+                `;
+                return div;
+            };
+            info.addTo(map);
+
+            // Add heatmap legend
+            const legend = L.control({ position: 'bottomleft' });
+            legend.onAdd = function() {
+                const div = L.DomUtil.create('div', 'legend-control');
+                div.innerHTML = `
+                    <div class="legend-title">Photo Density</div>
+                    <div class="legend-gradient"></div>
+                    <div class="legend-labels">
+                        <span>Low</span>
+                        <span>High</span>
+                    </div>
+                `;
+                return div;
+            };
+            legend.addTo(map);
+
+            // Prepare heatmap data
+            const heatData = geojsonData.features.map(feature => [
+                feature.geometry.coordinates[1],
+                feature.geometry.coordinates[0],
+                1
+            ]);
+
+            // Create heatmap layer with improved gradient
+            heatLayer = L.heatLayer(heatData, {
+                radius: 20,
+                blur: 15,
+                maxZoom: 12,
+                max: 0.6,
+                minOpacity: 0.4,
+                gradient: {
+                    0.0: '#c7d2fe',
+                    0.2: '#3b82f6',
+                    0.4: '#10b981', 
+                    0.6: '#fbbf24',
+                    0.8: '#f97316',
+                    1.0: '#ef4444'
+                }
+            }).addTo(map);
+
+            // Add labels layer on top of heatmap
+            const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+                attribution: '',
+                maxZoom: 19,
+                zIndex: 1000,
+                pane: 'shadowPane' // Use a pane that renders above the heatmap
+            }).addTo(map);
+
+            // Create markers layer
+            markersLayer = L.layerGroup();
+            L.geoJSON(geojsonData, {
+                pointToLayer: function(feature, latlng) {
+                    return L.marker(latlng, { icon: photoIcon });
+                },
+                onEachFeature: function(feature, layer) {
+                    const props = feature.properties;
+                    const formattedDate = props.date ? props.date.replace(/:/g, '-').substring(0, 10) : 'No date';
+                    layer.bindPopup(`
+                        <div style="min-width: 150px;">
+                            <strong style="font-size: 16px;">📷 ${formattedDate}</strong>
+                        </div>
+                    `);
+                }
+            }).addTo(markersLayer);
+
+            // Switch between heatmap and markers based on zoom
+            function updateVisualization() {
+                const zoom = map.getZoom();
+                if (zoom > 12) {
+                    if (!map.hasLayer(markersLayer)) {
+                        map.removeLayer(heatLayer);
+                        map.addLayer(markersLayer);
+                    }
+                } else {
+                    if (!map.hasLayer(heatLayer)) {
+                        map.removeLayer(markersLayer);
+                        map.addLayer(heatLayer);
+                    }
+                }
+            }
+
+            map.on('zoomend', updateVisualization);
+            updateVisualization();
+
+            // Fit map to show data with some padding
+            const bounds = L.latLngBounds(
+                geojsonData.features.map(f => [f.geometry.coordinates[1], f.geometry.coordinates[0]])
+            );
+            map.fitBounds(bounds, { padding: [80, 80] });
+        }
+
+        // Try to fetch the GeoJSON file
+        fetch('static/photos.geojson')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('GeoJSON file not found');
+                }
+                return response.json();
+            })
+            .then(geojsonData => {
+                loadGeoJSON(geojsonData);
+            })
+            .catch(error => {
+                console.error('Error loading GeoJSON:', error);
+                // Add fallback message
+                const info = L.control({ position: 'topright' });
+                info.onAdd = function() {
+                    const div = L.DomUtil.create('div', 'map-info-control');
+                    div.innerHTML = `
+                        <strong style="color: #e74c3c;">📸 Photo data not available</strong>
+                        <br>
+                        <small>Place photos.geojson in static/ directory</small>
+                    `;
+                    return div;
+                };
+                info.addTo(map);
+            });
+    </script>
+</body>
+</html>
