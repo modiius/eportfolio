@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salzburg Adventure Map - Random Cycling Destinations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .adventure-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        #map {
+            flex: 1;
+            position: relative;
+        }
+        .header {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 20px 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .control-panel {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            max-width: 350px;
+        }
+        .distance-slider {
+            width: 100%;
+            margin: 12px 0;
+        }
+        .adventure-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .adventure-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+        }
+        .adventure-button:active {
+            transform: translateY(0);
+        }
+        .adventure-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .destination-info {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            display: none;
+        }
+        .destination-info.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .distance-display {
+            font-size: 18px;
+            font-weight: 600;
+            color: #667eea;
+            text-align: center;
+            margin: 8px 0;
+        }
+        .leaflet-routing-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="adventure-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="text-3xl font-light text-gray-900 text-center mb-1">🚴 Salzburg Adventure Map</h1>
+            <p class="text-lg text-gray-600 text-center">Discover random cycling destinations in your district</p>
+        </div>
+
+        <!-- Map -->
+        <div id="map"></div>
+    </div>
+
+    <script>
+        // Initialize map
+        const map = L.map('map', {
+            zoomControl: true,
+            attributionControl: true
+        }).setView([47.8095, 13.0550], 11);
+
+        // Add base tile layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Store layers
+        let currentLocationMarker = null;
+        let destinationMarker = null;
+        let routeLine = null;
+        let radiusCircle = null;
+        let destinationCircle = null;
+
+        // Custom icons
+        const currentLocationIcon = L.divIcon({
+            className: 'current-location-marker',
+            html: '<div style="background: #ef4444; width: 16px; height: 16px; border-radius: 50%; border: 4px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.4);"></div>',
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+        });
+
+        const destinationIcon = L.divIcon({
+            className: 'destination-marker',
+            html: '<div style="background: #10b981; width: 20px; height: 20px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 10px rgba(0,0,0,0.5);"></div>',
+            iconSize: [28, 28],
+            iconAnchor: [14, 14]
+        });
+
+        // Create control panel
+        const controlPanel = L.control({ position: 'topleft' });
+        controlPanel.onAdd = function() {
+            const div = L.DomUtil.create('div', 'control-panel');
+            div.innerHTML = `
+                <h3 class="text-xl font-semibold mb-3 text-gray-800">🎲 Generate Adventure</h3>
+                
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Cycling Distance: <span id="distance-value" class="distance-display">15 km</span>
+                </label>
+                <input type="range" min="5" max="40" value="15" step="1" 
+                       class="distance-slider" id="distance-slider">
+                <div class="flex justify-between text-xs text-gray-500 mb-4">
+                    <span>5 km</span>
+                    <span>40 km</span>
+                </div>
+
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Target Buffer Radius: <span id="buffer-value" class="distance-display">500 m</span>
+                </label>
+                <input type="range" min="100" max="2000" value="500" step="100" 
+                       class="distance-slider" id="buffer-slider">
+                <div class="flex justify-between text-xs text-gray-500 mb-4">
+                    <span>100 m</span>
+                    <span>2 km</span>
+                </div>
+
+                <button id="generate-btn" class="adventure-button">
+                    🚴 Find Random Destination
+                </button>
+
+                <button id="locate-btn" class="adventure-button mt-3" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);">
+                    📍 Use My Current Location
+                </button>
+
+                <div id="destination-info" class="destination-info">
+                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Your Adventure Awaits!</h4>
+                    <p class="text-sm text-gray-700" id="destination-distance"></p>
+                    <p class="text-xs text-gray-500 mt-2" id="destination-coords"></p>
+                </div>
+
+                <div class="mt-4 text-xs text-gray-500 text-center">
+                    <p>Click the map to set your starting point</p>
+                </div>
+            `;
+            
+            // Prevent map interactions when using controls
+            L.DomEvent.disableClickPropagation(div);
+            L.DomEvent.disableScrollPropagation(div);
+            
+            return div;
+        };
+        controlPanel.addTo(map);
+
+        // Get control elements
+        const distanceSlider = document.getElementById('distance-slider');
+        const distanceValue = document.getElementById('distance-value');
+        const bufferSlider = document.getElementById('buffer-slider');
+        const bufferValue = document.getElementById('buffer-value');
+        const generateBtn = document.getElementById('generate-btn');
+        const locateBtn = document.getElementById('locate-btn');
+        const destinationInfo = document.getElementById('destination-info');
+        const destinationDistance = document.getElementById('destination-distance');
+        const destinationCoords = document.getElementById('destination-coords');
+
+        let currentLocation = null;
+        let maxDistance = 15; // km
+        let bufferRadius = 500; // meters
+
+        // Update distance display
+        distanceSlider.addEventListener('input', (e) => {
+            maxDistance = parseInt(e.target.value);
+            distanceValue.textContent = `${maxDistance} km`;
+            
+            // Update radius circle if location is set
+            if (currentLocation && radiusCircle) {
+                radiusCircle.setRadius(maxDistance * 1000);
+            }
+        });
+
+        // Update buffer radius display
+        bufferSlider.addEventListener('input', (e) => {
+            bufferRadius = parseInt(e.target.value);
+            if (bufferRadius >= 1000) {
+                bufferValue.textContent = `${(bufferRadius / 1000).toFixed(1)} km`;
+            } else {
+                bufferValue.textContent = `${bufferRadius} m`;
+            }
+            
+            // Update destination circle if it exists
+            if (destinationCircle) {
+                destinationCircle.setRadius(bufferRadius);
+            }
+        });
+
+        // Set current location by clicking on map
+        map.on('click', (e) => {
+            setCurrentLocation(e.latlng);
+        });
+
+        // Use geolocation
+        locateBtn.addEventListener('click', () => {
+            if (navigator.geolocation) {
+                locateBtn.disabled = true;
+                locateBtn.textContent = '📍 Locating...';
+                
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const latlng = L.latLng(position.coords.latitude, position.coords.longitude);
+                        setCurrentLocation(latlng);
+                        map.setView(latlng, 12);
+                        locateBtn.disabled = false;
+                        locateBtn.textContent = '📍 Use My Current Location';
+                    },
+                    (error) => {
+                        alert('Unable to get your location. Please click on the map instead.');
+                        locateBtn.disabled = false;
+                        locateBtn.textContent = '📍 Use My Current Location';
+                    }
+                );
+            } else {
+                alert('Geolocation is not supported by your browser. Please click on the map instead.');
+            }
+        });
+
+        function setCurrentLocation(latlng) {
+            currentLocation = latlng;
+            
+            // Remove previous marker and circle
+            if (currentLocationMarker) map.removeLayer(currentLocationMarker);
+            if (radiusCircle) map.removeLayer(radiusCircle);
+            
+            // Add new marker
+            currentLocationMarker = L.marker(latlng, { icon: currentLocationIcon })
+                .addTo(map)
+                .bindPopup('📍 Your Starting Point')
+                .openPopup();
+            
+            // Add radius circle
+            radiusCircle = L.circle(latlng, {
+                radius: maxDistance * 1000, // Convert km to meters
+                color: '#3b82f6',
+                fillColor: '#3b82f6',
+                fillOpacity: 0.1,
+                weight: 2,
+                dashArray: '5, 10'
+            }).addTo(map);
+            
+            generateBtn.disabled = false;
+        }
+
+        // Generate random destination
+        generateBtn.addEventListener('click', () => {
+            if (!currentLocation) {
+                alert('Please set your starting location first by clicking on the map!');
+                return;
+            }
+            
+            generateBtn.disabled = true;
+            generateBtn.textContent = '🎲 Generating...';
+            
+            // Generate random point within cycling distance
+            const destination = generateRandomDestination();
+            
+            showDestination(destination);
+            
+            generateBtn.disabled = false;
+            generateBtn.textContent = '🚴 Find Random Destination';
+        });
+
+        function generateRandomDestination() {
+            const currentPoint = turf.point([currentLocation.lng, currentLocation.lat]);
+            
+            // Generate random bearing and distance
+            const bearing = Math.random() * 360;
+            const distance = Math.random() * maxDistance; // Random distance up to max
+            
+            // Calculate destination point
+            const destination = turf.destination(currentPoint, distance, bearing, { units: 'kilometers' });
+            
+            return {
+                latlng: L.latLng(destination.geometry.coordinates[1], destination.geometry.coordinates[0]),
+                distance: distance
+            };
+        }
+
+        function showDestination(destination) {
+            // Remove previous destination, route, and destination circle
+            if (destinationMarker) map.removeLayer(destinationMarker);
+            if (routeLine) map.removeLayer(routeLine);
+            if (destinationCircle) map.removeLayer(destinationCircle);
+            
+            // Add destination buffer circle (dotted red)
+            destinationCircle = L.circle(destination.latlng, {
+                radius: bufferRadius,
+                color: '#ef4444',
+                fillColor: '#ef4444',
+                fillOpacity: 0.1,
+                weight: 2,
+                dashArray: '5, 10',
+                opacity: 0.8
+            }).addTo(map);
+            
+            // Calculate points around the buffer circle for Google Maps waypoints
+            // We'll create 8 points around the circle to approximate it
+            const numPoints = 8;
+            const bufferPoints = [];
+            for (let i = 0; i < numPoints; i++) {
+                const bearing = (360 / numPoints) * i;
+                const point = turf.destination(
+                    turf.point([destination.latlng.lng, destination.latlng.lat]),
+                    bufferRadius / 1000,
+                    bearing,
+                    { units: 'kilometers' }
+                );
+                bufferPoints.push(`${point.geometry.coordinates[1]},${point.geometry.coordinates[0]}`);
+            }
+            
+            // Create Google Maps link with cycling directions to destination
+            const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${currentLocation.lat},${currentLocation.lng}&destination=${destination.latlng.lat},${destination.latlng.lng}&travelmode=bicycling`;
+            
+            // Create a more detailed Google Maps link that shows the buffer area
+            const detailedMapsUrl = `https://www.google.com/maps/search/?api=1&query=${destination.latlng.lat},${destination.latlng.lng}`;
+            
+            const bufferDisplay = bufferRadius >= 1000 ? `${(bufferRadius / 1000).toFixed(1)} km` : `${bufferRadius} m`;
+            
+            // Add destination marker
+            destinationMarker = L.marker(destination.latlng, { icon: destinationIcon })
+                .addTo(map)
+                .bindPopup(`
+                    <div style="text-align: center; min-width: 200px;">
+                        <strong style="font-size: 16px;">🎯 Your Destination!</strong><br>
+                        <span style="color: #10b981; font-weight: 600;">${destination.distance.toFixed(1)} km away</span><br>
+                        <span style="color: #ef4444; font-size: 12px;">Buffer: ${bufferDisplay}</span><br>
+                        <a href="${googleMapsUrl}" target="_blank" 
+                           style="display: inline-block; margin-top: 8px; padding: 8px 16px; background: #4285f4; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">
+                            🗺️ Get Directions
+                        </a>
+                    </div>
+                `)
+                .openPopup();
+            
+            // Draw route line
+            routeLine = L.polyline([currentLocation, destination.latlng], {
+                color: '#10b981',
+                weight: 4,
+                opacity: 0.7,
+                dashArray: '10, 10'
+            }).addTo(map);
+            
+            // Fit map to show both points and the destination circle
+            const bounds = L.latLngBounds([currentLocation, destination.latlng]);
+            map.fitBounds(bounds, { padding: [100, 100] });
+            
+            // Update info panel
+            destinationDistance.innerHTML = `Distance: ${destination.distance.toFixed(1)} km (straight line)<br>
+                Buffer Zone: ${bufferDisplay}<br>
+                <a href="${googleMapsUrl}" target="_blank" 
+                   style="color: #4285f4; text-decoration: none; font-weight: 600;">
+                    🗺️ Get cycling directions →
+                </a>`;
+            destinationCoords.textContent = `Coordinates: ${destination.latlng.lat.toFixed(4)}°N, ${destination.latlng.lng.toFixed(4)}°E`;
+            destinationInfo.classList.add('show');
+            
+            // Add slight bounce animation to destination marker
+            setTimeout(() => {
+                if (destinationMarker) {
+                    destinationMarker.openPopup();
+                }
+            }, 300);
+        }
+    </script>
+</body>
+</html>
